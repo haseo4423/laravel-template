@@ -7,12 +7,10 @@ $ git clone {ThisRepository}
 $ cd ../
 ```
 
-In some cases, you need to specify username.
-
 ### build & start container
 
 ```
-$ docker-compose up -d --build
+$ ./vessel start
 ```
 
 ### get into php container

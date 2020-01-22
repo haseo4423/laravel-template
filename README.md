@@ -16,7 +16,7 @@ $ ./vessel start
 ### get into php container
 
 ```
-$ docker-compose exec php /bin/bash
+$ ./vessel app
 ```
 
 ### composer install

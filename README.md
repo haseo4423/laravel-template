@@ -1,55 +1,40 @@
 ## Getting Started
 
-### cloning devbase-laravel & changing directory
+### cloning this repository & changing directory
 
 ```
 $ git clone {ThisRepository}
-$ cd ../
+$ cd {ThisRepository}
 ```
 
-### build & start container
+### copying .env file
+
+```
+$ cp .env.bak.vessel .env
+```
+
+### building & starting container
 
 ```
 $ ./vessel start
 ```
 
-### get into php container
+### installing composer packages
 
 ```
-$ ./vessel app
+$ ./vessel comp install
 ```
 
-### composer install
+### generating encryption key
 
 ```
-$ cd devbase-laravel/
-$ composer install
+$ ./vessel artisan key:generate
 ```
 
-### copy .env
+### migrating database
 
 ```
-$ cp .env.example .env
-```
-
-### edit .env
-
-```
-DB_HOST=mysql
-DB_DATABASE=root
-DB_PASSWORD=root
-```
-
-### generate key
-
-```
-$ php artisan key:generate
-```
-
-### migrate database
-
-```
-$ php artisan migrate --seed
+$ ./vessel artisan migrate --seed
 ```
 
 ### Enjoy!
